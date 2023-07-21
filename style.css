@@ -1,0 +1,136 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono:wght@500&display=swap"); */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    color: azure;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+
+}
+nav ul{
+    list-style: none;
+    padding: 10px 0px;
+    margin: 0px auto;
+
+}
+nav ul li{
+    text-decoration: none;
+    font-size: 5.2rem;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.gameContainer{
+    /* background-color: yellow; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+/* .line{
+    height: 3px;
+    width: 51rem;
+    background-color: black;
+    position: absolute;
+} */
+.container{
+    display: grid;
+    width: 51rem;
+    height: 51rem;
+    grid-template-rows: repeat(3, 17rem);
+    grid-template-columns: repeat(3, 17rem);
+    /* position: relative; */
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11rem;
+    border: 2px solid black;
+    font-family: 'Roboto Mono', monospace;
+}
+.box:hover{
+    background-color: rgb(40, 48, 48);
+    cursor: pointer;
+}
+.info{
+    font-size: 2.2rem;
+}
+
+.gameInfo{
+    font-size: 2.4rem;
+    padding: 0px 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.imageInfo img{
+    /* display: none; */
+    width: 0rem;
+    transition: width 1s ease-in-out;
+    border-radius: 50px;
+}
+
+.bt{
+    border-top: 0;
+}
+.br{
+    border-right: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+.bl{
+    border-left: 0;
+}
+
+#reset{
+    margin: 15px 35px;
+    padding: 15px 35px;
+    font-size: 2.4rem;
+    border-radius: 7px;
+    
+}
+
+#reset:hover{
+    background-color: rgb(35, 37, 36);
+    color: beige;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* @media screen and (max-width: 2800px){
+nav{
+    height: 7rem;
+}
+nav ul{
+    padding: 6px 0px;
+}
+nav ul li{
+    font-size: 3.2rem;
+}
+
+.gameContainer{
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.container{
+    grid-template-rows: repeat(3, 15rem);
+    grid-template-columns: repeat(3, 15rem);
+}
+.box{
+    font-size: 9rem;
+}
+.info{
+    font-size: 1.8rem;
+}
+.gameInfo{
+    font-size: 2.0rem;
+}
+    
+} */
